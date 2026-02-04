@@ -71,9 +71,10 @@
             // 
             Title.AutoSize = true;
             Title.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Title.Location = new Point(156, 9);
+            Title.Location = new Point(168, 16);
+            Title.Margin = new Padding(4, 0, 4, 0);
             Title.Name = "Title";
-            Title.Size = new Size(410, 50);
+            Title.Size = new Size(617, 74);
             Title.TabIndex = 0;
             Title.Text = "General Health Survey";
             // 
@@ -81,9 +82,10 @@
             // 
             instruction.AutoSize = true;
             instruction.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            instruction.Location = new Point(21, 59);
+            instruction.Location = new Point(24, 96);
+            instruction.Margin = new Padding(4, 0, 4, 0);
             instruction.Name = "instruction";
-            instruction.Size = new Size(637, 13);
+            instruction.Size = new Size(960, 23);
             instruction.TabIndex = 1;
             instruction.Text = "Kindly fill the necessary information below. Make sure to fill all the boxes and leave no empty boxes after you have settled. ";
             instruction.Click += instruction_Click;
@@ -92,9 +94,10 @@
             // 
             piName.AutoSize = true;
             piName.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            piName.Location = new Point(30, 125);
+            piName.Location = new Point(43, 208);
+            piName.Margin = new Padding(4, 0, 4, 0);
             piName.Name = "piName";
-            piName.Size = new Size(50, 20);
+            piName.Size = new Size(76, 31);
             piName.TabIndex = 2;
             piName.Text = "Name";
             piName.Click += label1_Click;
@@ -103,70 +106,78 @@
             // 
             personalInformation.AutoSize = true;
             personalInformation.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            personalInformation.Location = new Point(21, 84);
+            personalInformation.Location = new Point(30, 140);
+            personalInformation.Margin = new Padding(4, 0, 4, 0);
             personalInformation.Name = "personalInformation";
-            personalInformation.Size = new Size(257, 32);
+            personalInformation.Size = new Size(376, 48);
             personalInformation.TabIndex = 3;
             personalInformation.Text = "Personal Information";
             // 
             // lastName
             // 
             lastName.AutoSize = true;
-            lastName.Location = new Point(57, 174);
+            lastName.Location = new Point(81, 290);
+            lastName.Margin = new Padding(4, 0, 4, 0);
             lastName.Name = "lastName";
-            lastName.Size = new Size(63, 15);
+            lastName.Size = new Size(95, 25);
             lastName.TabIndex = 4;
             lastName.Text = "Last Name";
             // 
             // lastNameTextBox
             // 
-            lastNameTextBox.Location = new Point(32, 148);
+            lastNameTextBox.Location = new Point(46, 247);
+            lastNameTextBox.Margin = new Padding(4, 5, 4, 5);
             lastNameTextBox.Name = "lastNameTextBox";
-            lastNameTextBox.Size = new Size(120, 23);
+            lastNameTextBox.Size = new Size(170, 31);
             lastNameTextBox.TabIndex = 5;
             lastNameTextBox.TextChanged += lastNameTextBox_TextChanged;
             // 
             // firstNameTextBox
             // 
-            firstNameTextBox.Location = new Point(172, 148);
+            firstNameTextBox.Location = new Point(246, 247);
+            firstNameTextBox.Margin = new Padding(4, 5, 4, 5);
             firstNameTextBox.Name = "firstNameTextBox";
-            firstNameTextBox.Size = new Size(120, 23);
+            firstNameTextBox.Size = new Size(170, 31);
             firstNameTextBox.TabIndex = 6;
             firstNameTextBox.TextChanged += textBox2_TextChanged;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(156, 156);
+            label1.Location = new Point(223, 260);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(10, 15);
+            label1.Size = new Size(16, 25);
             label1.TabIndex = 7;
             label1.Text = ",";
             label1.Click += label1_Click_1;
             // 
             // middleNameTextBox
             // 
-            middleNameTextBox.Location = new Point(298, 148);
+            middleNameTextBox.Location = new Point(426, 247);
+            middleNameTextBox.Margin = new Padding(4, 5, 4, 5);
             middleNameTextBox.Name = "middleNameTextBox";
-            middleNameTextBox.Size = new Size(120, 23);
+            middleNameTextBox.Size = new Size(170, 31);
             middleNameTextBox.TabIndex = 8;
             middleNameTextBox.TextChanged += middleNameTextBox_TextChanged;
             // 
             // middleName
             // 
             middleName.AutoSize = true;
-            middleName.Location = new Point(326, 174);
+            middleName.Location = new Point(466, 290);
+            middleName.Margin = new Padding(4, 0, 4, 0);
             middleName.Name = "middleName";
-            middleName.Size = new Size(79, 15);
+            middleName.Size = new Size(119, 25);
             middleName.TabIndex = 9;
             middleName.Text = "Middle Name";
             // 
             // firstName
             // 
             firstName.AutoSize = true;
-            firstName.Location = new Point(202, 175);
+            firstName.Location = new Point(289, 292);
+            firstName.Margin = new Padding(4, 0, 4, 0);
             firstName.Name = "firstName";
-            firstName.Size = new Size(64, 15);
+            firstName.Size = new Size(97, 25);
             firstName.TabIndex = 10;
             firstName.Text = "First Name";
             // 
@@ -174,88 +185,98 @@
             // 
             address.AutoSize = true;
             address.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            address.Location = new Point(32, 201);
+            address.Location = new Point(46, 335);
+            address.Margin = new Padding(4, 0, 4, 0);
             address.Name = "address";
-            address.Size = new Size(63, 20);
+            address.Size = new Size(98, 31);
             address.TabIndex = 11;
             address.Text = "Address";
             address.Click += address_Click;
             // 
             // addressTextBox
             // 
-            addressTextBox.Location = new Point(30, 224);
+            addressTextBox.Location = new Point(43, 373);
+            addressTextBox.Margin = new Padding(4, 5, 4, 5);
             addressTextBox.Name = "addressTextBox";
-            addressTextBox.Size = new Size(388, 23);
+            addressTextBox.Size = new Size(553, 31);
             addressTextBox.TabIndex = 12;
             addressTextBox.TextChanged += addressTextBox_TextChanged;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(57, 250);
+            label3.Location = new Point(81, 417);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(0, 15);
+            label3.Size = new Size(0, 25);
             label3.TabIndex = 13;
             // 
             // birthDate
             // 
             birthDate.AutoSize = true;
             birthDate.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            birthDate.Location = new Point(32, 265);
+            birthDate.Location = new Point(46, 442);
+            birthDate.Margin = new Padding(4, 0, 4, 0);
             birthDate.Name = "birthDate";
-            birthDate.Size = new Size(78, 20);
+            birthDate.Size = new Size(120, 31);
             birthDate.TabIndex = 14;
             birthDate.Text = "Birth Date";
             birthDate.Click += label4_Click;
             // 
             // monthTextBox
             // 
-            monthTextBox.Location = new Point(30, 288);
+            monthTextBox.Location = new Point(43, 480);
+            monthTextBox.Margin = new Padding(4, 5, 4, 5);
             monthTextBox.Name = "monthTextBox";
-            monthTextBox.Size = new Size(120, 23);
+            monthTextBox.Size = new Size(170, 31);
             monthTextBox.TabIndex = 15;
             monthTextBox.TextChanged += textBox5_TextChanged;
             // 
             // month
             // 
             month.AutoSize = true;
-            month.Location = new Point(67, 314);
+            month.Location = new Point(96, 523);
+            month.Margin = new Padding(4, 0, 4, 0);
             month.Name = "month";
-            month.Size = new Size(43, 15);
+            month.Size = new Size(65, 25);
             month.TabIndex = 16;
             month.Text = "Month";
             // 
             // dayTextBox
             // 
-            dayTextBox.Location = new Point(156, 288);
+            dayTextBox.Location = new Point(223, 480);
+            dayTextBox.Margin = new Padding(4, 5, 4, 5);
             dayTextBox.Name = "dayTextBox";
-            dayTextBox.Size = new Size(44, 23);
+            dayTextBox.Size = new Size(61, 31);
             dayTextBox.TabIndex = 17;
             dayTextBox.TextChanged += dayTextBox_TextChanged;
             // 
             // yearTextBox
             // 
-            yearTextBox.Location = new Point(222, 288);
+            yearTextBox.Location = new Point(317, 480);
+            yearTextBox.Margin = new Padding(4, 5, 4, 5);
             yearTextBox.Name = "yearTextBox";
-            yearTextBox.Size = new Size(120, 23);
+            yearTextBox.Size = new Size(170, 31);
             yearTextBox.TabIndex = 18;
             yearTextBox.TextChanged += yearTextBox_TextChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(206, 296);
+            label2.Location = new Point(294, 493);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(10, 15);
+            label2.Size = new Size(16, 25);
             label2.TabIndex = 19;
             label2.Text = ",";
             // 
             // day
             // 
             day.AutoSize = true;
-            day.Location = new Point(156, 314);
+            day.Location = new Point(223, 523);
+            day.Margin = new Padding(4, 0, 4, 0);
             day.Name = "day";
-            day.Size = new Size(27, 15);
+            day.Size = new Size(43, 25);
             day.TabIndex = 20;
             day.Text = "Day";
             day.Click += label4_Click_1;
@@ -263,17 +284,19 @@
             // year
             // 
             year.AutoSize = true;
-            year.Location = new Point(263, 314);
+            year.Location = new Point(376, 523);
+            year.Margin = new Padding(4, 0, 4, 0);
             year.Name = "year";
-            year.Size = new Size(29, 15);
+            year.Size = new Size(44, 25);
             year.TabIndex = 21;
             year.Text = "Year";
             // 
             // emailAddTextBox
             // 
-            emailAddTextBox.Location = new Point(30, 364);
+            emailAddTextBox.Location = new Point(43, 607);
+            emailAddTextBox.Margin = new Padding(4, 5, 4, 5);
             emailAddTextBox.Name = "emailAddTextBox";
-            emailAddTextBox.Size = new Size(388, 23);
+            emailAddTextBox.Size = new Size(553, 31);
             emailAddTextBox.TabIndex = 23;
             emailAddTextBox.TextChanged += emailAddTextBox_TextChanged;
             // 
@@ -281,17 +304,19 @@
             // 
             emailAdd.AutoSize = true;
             emailAdd.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            emailAdd.Location = new Point(32, 341);
+            emailAdd.Location = new Point(46, 568);
+            emailAdd.Margin = new Padding(4, 0, 4, 0);
             emailAdd.Name = "emailAdd";
-            emailAdd.Size = new Size(104, 20);
+            emailAdd.Size = new Size(160, 31);
             emailAdd.TabIndex = 22;
             emailAdd.Text = "Email Address";
             // 
             // contactNumberTextBox
             // 
-            contactNumberTextBox.Location = new Point(28, 425);
+            contactNumberTextBox.Location = new Point(40, 708);
+            contactNumberTextBox.Margin = new Padding(4, 5, 4, 5);
             contactNumberTextBox.Name = "contactNumberTextBox";
-            contactNumberTextBox.Size = new Size(388, 23);
+            contactNumberTextBox.Size = new Size(553, 31);
             contactNumberTextBox.TabIndex = 25;
             contactNumberTextBox.TextChanged += contactNumberTextBox_TextChanged;
             // 
@@ -299,9 +324,10 @@
             // 
             contactNumber.AutoSize = true;
             contactNumber.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            contactNumber.Location = new Point(30, 402);
+            contactNumber.Location = new Point(43, 670);
+            contactNumber.Margin = new Padding(4, 0, 4, 0);
             contactNumber.Name = "contactNumber";
-            contactNumber.Size = new Size(122, 20);
+            contactNumber.Size = new Size(186, 31);
             contactNumber.TabIndex = 24;
             contactNumber.Text = "Contact Number";
             // 
@@ -309,18 +335,20 @@
             // 
             gender.AutoSize = true;
             gender.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            gender.Location = new Point(453, 125);
+            gender.Location = new Point(647, 208);
+            gender.Margin = new Padding(4, 0, 4, 0);
             gender.Name = "gender";
-            gender.Size = new Size(59, 20);
+            gender.Size = new Size(90, 31);
             gender.TabIndex = 26;
             gender.Text = "Gender";
             // 
             // male
             // 
             male.AutoSize = true;
-            male.Location = new Point(459, 152);
+            male.Location = new Point(656, 253);
+            male.Margin = new Padding(4, 5, 4, 5);
             male.Name = "male";
-            male.Size = new Size(51, 19);
+            male.Size = new Size(75, 29);
             male.TabIndex = 27;
             male.TabStop = true;
             male.Text = "Male";
@@ -330,9 +358,10 @@
             // female
             // 
             female.AutoSize = true;
-            female.Location = new Point(459, 174);
+            female.Location = new Point(656, 290);
+            female.Margin = new Padding(4, 5, 4, 5);
             female.Name = "female";
-            female.Size = new Size(63, 19);
+            female.Size = new Size(93, 29);
             female.TabIndex = 28;
             female.TabStop = true;
             female.Text = "Female";
@@ -342,9 +371,10 @@
             // etc
             // 
             etc.AutoSize = true;
-            etc.Location = new Point(459, 199);
+            etc.Location = new Point(656, 332);
+            etc.Margin = new Padding(4, 5, 4, 5);
             etc.Name = "etc";
-            etc.Size = new Size(61, 19);
+            etc.Size = new Size(91, 29);
             etc.TabIndex = 29;
             etc.TabStop = true;
             etc.Text = "others:";
@@ -352,17 +382,19 @@
             // 
             // genderTextBox
             // 
-            genderTextBox.Location = new Point(517, 198);
+            genderTextBox.Location = new Point(739, 330);
+            genderTextBox.Margin = new Padding(4, 5, 4, 5);
             genderTextBox.Name = "genderTextBox";
-            genderTextBox.Size = new Size(90, 23);
+            genderTextBox.Size = new Size(127, 31);
             genderTextBox.TabIndex = 30;
             genderTextBox.TextChanged += genderTextBox_TextChanged;
             // 
             // nextButton
             // 
-            nextButton.Location = new Point(451, 374);
+            nextButton.Location = new Point(644, 623);
+            nextButton.Margin = new Padding(4, 5, 4, 5);
             nextButton.Name = "nextButton";
-            nextButton.Size = new Size(75, 23);
+            nextButton.Size = new Size(107, 38);
             nextButton.TabIndex = 31;
             nextButton.Text = "Next";
             nextButton.UseVisualStyleBackColor = true;
@@ -370,9 +402,10 @@
             // 
             // exitButton
             // 
-            exitButton.Location = new Point(544, 374);
+            exitButton.Location = new Point(777, 623);
+            exitButton.Margin = new Padding(4, 5, 4, 5);
             exitButton.Name = "exitButton";
-            exitButton.Size = new Size(75, 23);
+            exitButton.Size = new Size(107, 38);
             exitButton.TabIndex = 32;
             exitButton.Text = "Exit";
             exitButton.UseVisualStyleBackColor = true;
@@ -382,26 +415,29 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(453, 245);
+            label4.Location = new Point(647, 408);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(87, 20);
+            label4.Size = new Size(133, 31);
             label4.TabIndex = 33;
             label4.Text = "Occupation";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(462, 269);
+            label5.Location = new Point(660, 448);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(50, 15);
+            label5.Size = new Size(76, 25);
             label5.TabIndex = 34;
             label5.Text = "Choose:";
             // 
             // occupationTextBox
             // 
-            occupationTextBox.Location = new Point(518, 266);
+            occupationTextBox.Location = new Point(740, 443);
+            occupationTextBox.Margin = new Padding(4, 5, 4, 5);
             occupationTextBox.Name = "occupationTextBox";
-            occupationTextBox.Size = new Size(90, 23);
+            occupationTextBox.Size = new Size(127, 31);
             occupationTextBox.TabIndex = 35;
             occupationTextBox.TextChanged += occupationTextBox_TextChanged;
             // 
@@ -409,17 +445,18 @@
             // 
             listBoxOcc.FormattingEnabled = true;
             listBoxOcc.Items.AddRange(new object[] { "Student", "Employed", "Unemployed", "Senior Citizen", "OFW" });
-            listBoxOcc.Location = new Point(517, 306);
+            listBoxOcc.Location = new Point(739, 510);
+            listBoxOcc.Margin = new Padding(4, 5, 4, 5);
             listBoxOcc.Name = "listBoxOcc";
-            listBoxOcc.Size = new Size(107, 34);
+            listBoxOcc.Size = new Size(151, 54);
             listBoxOcc.TabIndex = 36;
             listBoxOcc.SelectedIndexChanged += listBoxOcc_SelectedIndexChanged;
             // 
             // LBOccupation
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(689, 475);
+            ClientSize = new Size(1011, 792);
             Controls.Add(listBoxOcc);
             Controls.Add(occupationTextBox);
             Controls.Add(label5);
@@ -457,8 +494,10 @@
             Controls.Add(piName);
             Controls.Add(instruction);
             Controls.Add(Title);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "LBOccupation";
             Text = "Form1";
+            FormClosed += formClosed1;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -12,7 +12,8 @@ namespace Week3Fuentes
 {
     public partial class Form4 : Form
     {
-        string fName, mName, lName, ADDD, EM, NU, MO, DA, YE;
+        string fName, mName, lName, ADDD, EM, NU, MO;
+        int DA, YE;
         public Form4(string nameLast, string nameFirst, string nameMiddle, string ADDRESS, string EMAIL, string NUMBER, string MONTH, int DAY, int YEAR)
         {
             InitializeComponent();
@@ -24,8 +25,15 @@ namespace Week3Fuentes
             EM = EMAIL;
             NU = NUMBER;
             MO = MONTH;
-            DA = DAY.ToString();
-            YE = YEAR.ToString();
+            DA = DAY;
+            YE = YEAR;
+
+            nameF.Text = fName + " " + mName + " " + lName;
+            addressF.Text = ADDD;
+            emailF.Text = EM;
+            contactF.Text = NU;
+            birthDateF.Text = MO + " " + DA + ", " + YE;
+
         }
 
         private void Title_Click(object sender, EventArgs e)
@@ -35,27 +43,34 @@ namespace Week3Fuentes
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            birthDateF.Text = MO + " " + DA + ", " + YE;
         }
 
         private void nameF_TextChanged(object sender, EventArgs e)
         {
-            nameF.Text = fName + mName + lName;
+
         }
 
         private void addressF_TextChanged(object sender, EventArgs e)
         {
-            addressF.Text = ADDD;
+
         }
 
         private void emailF_TextChanged(object sender, EventArgs e)
         {
-            emailF.Text = EM;
         }
 
         private void contactF_TextChanged(object sender, EventArgs e)
         {
-            contactF.Text = NU;
+        }
+
+        private void formClosed(object sender, FormClosedEventArgs e) //behavior
+        {
+            Application.Exit();
+        }
+
+        private void buttonOkay_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
