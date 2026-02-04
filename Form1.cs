@@ -114,11 +114,11 @@ namespace Week3Fuentes
                 DAY = int.Parse(dayTextBox.Text);
                 YEAR = int.Parse(yearTextBox.Text);
 
-                //if (string.IsNullOrWhiteSpace(nameFirst) || string.IsNullOrWhiteSpace(nameLast) || string.IsNullOrWhiteSpace(ADDRESS) || string.IsNullOrWhiteSpace(EMAIL) || string.IsNullOrWhiteSpace(NUMBER) || string.IsNullOrWhiteSpace(MONTH) || string.IsNullOrWhiteSpace(dayTextBox.Text) || string.IsNullOrWhiteSpace(yearTextBox.Text))
-                //{
-                //    MessageBox.Show("Please fill in all the required fields.");
-                //    return;
-                //}
+                if (string.IsNullOrWhiteSpace(nameFirst) || string.IsNullOrWhiteSpace(nameLast) || string.IsNullOrWhiteSpace(ADDRESS) || string.IsNullOrWhiteSpace(EMAIL) || string.IsNullOrWhiteSpace(NUMBER) || string.IsNullOrWhiteSpace(MONTH) || string.IsNullOrWhiteSpace(dayTextBox.Text) || string.IsNullOrWhiteSpace(yearTextBox.Text))
+                { 
+                   MessageBox.Show("Please fill in all the required fields.");
+                   return;
+                }
 
                 if (male.Checked)
                     GENDER = "Male";
@@ -134,12 +134,12 @@ namespace Week3Fuentes
                 }
 
 
-
+                Form1Ext extension = new Form1Ext(nameLast, nameFirst, nameMiddle, ADDRESS, EMAIL, NUMBER, MONTH, DAY, YEAR);
                 Form4 fourthForm = new Form4(nameLast, nameFirst, nameMiddle, ADDRESS, EMAIL, NUMBER, MONTH, DAY, YEAR);
                 Form3 thirdForm = new Form3(nameLast, nameFirst, nameMiddle, ADDRESS, EMAIL, NUMBER, MONTH, DAY, YEAR);
                 Form2 secondForm = new Form2(nameLast, nameFirst, nameMiddle, ADDRESS, EMAIL, NUMBER, MONTH, DAY, YEAR);
 
-                secondForm.Show();
+                extension.Show();
 
                 this.Hide();
             }

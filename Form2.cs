@@ -40,29 +40,43 @@ namespace Week3Fuentes
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
-
-            this.Hide();
+            
         }
 
         private void next_Click(object sender, EventArgs e)
         {
-            //error including passing the sequence even if not all questions are answered
+           
             if (!buttonAgree.Checked && !buttonNeither.Checked && !buttonDisagree.Checked)
             {
-                MessageBox.Show("Ensure to select your choice each of the questions.");
+                MessageBox.Show("Ensure to select your choice for Question 1.");
                 return;
             }
-            
-            else if (!radioButton1.Checked && !radioButton2.Checked && !radioButton3.Checked && !radioButton4.Checked && !radioButton5.Checked && !radioButton6.Checked)
+
+           
+            if (!radioButton1.Checked && !radioButton2.Checked && !radioButton3.Checked)
             {
-                MessageBox.Show("Ensure to select your choice each of the questions.");
+                MessageBox.Show("Ensure to select your choice for Question 2.");
                 return;
             }
-            
-            else if (!radioButton7.Checked && !radioButton8.Checked && !radioButton9.Checked && !radioButton10.Checked && !radioButton11.Checked && !radioButton12.Checked)
+
+           
+            if (!radioButton4.Checked && !radioButton5.Checked && !radioButton6.Checked)
             {
-                MessageBox.Show("Ensure to select your choice each of the questions.");
+                MessageBox.Show("Ensure to select your choice for Question 3.");
+                return;
+            }
+
+          
+            if (!radioButton7.Checked && !radioButton8.Checked && !radioButton9.Checked)
+            {
+                MessageBox.Show("Ensure to select your choice for Question 4.");
+                return;
+            }
+
+           
+            if (!radioButton10.Checked && !radioButton11.Checked && !radioButton12.Checked)
+            {
+                MessageBox.Show("Ensure to select your choice for Question 5.");
                 return;
             }
 

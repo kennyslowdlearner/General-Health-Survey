@@ -445,10 +445,10 @@
             // 
             listBoxOcc.FormattingEnabled = true;
             listBoxOcc.Items.AddRange(new object[] { "Student", "Employed", "Unemployed", "Senior Citizen", "OFW" });
-            listBoxOcc.Location = new Point(739, 510);
+            listBoxOcc.Location = new Point(656, 488);
             listBoxOcc.Margin = new Padding(4, 5, 4, 5);
             listBoxOcc.Name = "listBoxOcc";
-            listBoxOcc.Size = new Size(151, 54);
+            listBoxOcc.Size = new Size(216, 79);
             listBoxOcc.TabIndex = 36;
             listBoxOcc.SelectedIndexChanged += listBoxOcc_SelectedIndexChanged;
             // 

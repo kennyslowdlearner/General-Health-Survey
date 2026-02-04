@@ -42,6 +42,7 @@
             contactF = new TextBox();
             emailF = new TextBox();
             buttonOkay = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // comboBox1
@@ -57,7 +58,7 @@
             // 
             Title.AutoSize = true;
             Title.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Title.Location = new Point(79, 52);
+            Title.Location = new Point(80, 40);
             Title.Margin = new Padding(4, 0, 4, 0);
             Title.Name = "Title";
             Title.Size = new Size(324, 74);
@@ -69,12 +70,13 @@
             // 
             instruction.AutoSize = true;
             instruction.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            instruction.Location = new Point(112, 136);
+            instruction.Location = new Point(112, 112);
             instruction.Margin = new Padding(4, 0, 4, 0);
             instruction.Name = "instruction";
             instruction.Size = new Size(260, 23);
             instruction.TabIndex = 5;
             instruction.Text = "Thank you for your cooperation!";
+            instruction.Click += instruction_Click;
             // 
             // piName
             // 
@@ -116,9 +118,9 @@
             emailAdd.Location = new Point(51, 340);
             emailAdd.Margin = new Padding(4, 0, 4, 0);
             emailAdd.Name = "emailAdd";
-            emailAdd.Size = new Size(160, 31);
+            emailAdd.Size = new Size(125, 31);
             emailAdd.TabIndex = 23;
-            emailAdd.Text = "Email Address";
+            emailAdd.Text = "Email Add.";
             // 
             // contactNumber
             // 
@@ -127,52 +129,52 @@
             contactNumber.Location = new Point(51, 390);
             contactNumber.Margin = new Padding(4, 0, 4, 0);
             contactNumber.Name = "contactNumber";
-            contactNumber.Size = new Size(186, 31);
+            contactNumber.Size = new Size(138, 31);
             contactNumber.TabIndex = 25;
-            contactNumber.Text = "Contact Number";
+            contactNumber.Text = "Contact No.";
             // 
             // nameF
             // 
-            nameF.Location = new Point(251, 190);
+            nameF.Location = new Point(192, 193);
             nameF.Margin = new Padding(4, 5, 4, 5);
             nameF.Name = "nameF";
-            nameF.Size = new Size(170, 31);
+            nameF.Size = new Size(229, 31);
             nameF.TabIndex = 26;
             nameF.TextChanged += nameF_TextChanged;
             // 
             // addressF
             // 
-            addressF.Location = new Point(251, 240);
+            addressF.Location = new Point(192, 243);
             addressF.Margin = new Padding(4, 5, 4, 5);
             addressF.Name = "addressF";
-            addressF.Size = new Size(170, 31);
+            addressF.Size = new Size(229, 31);
             addressF.TabIndex = 27;
             addressF.TextChanged += addressF_TextChanged;
             // 
             // birthDateF
             // 
-            birthDateF.Location = new Point(251, 285);
+            birthDateF.Location = new Point(192, 288);
             birthDateF.Margin = new Padding(4, 5, 4, 5);
             birthDateF.Name = "birthDateF";
-            birthDateF.Size = new Size(170, 31);
+            birthDateF.Size = new Size(229, 31);
             birthDateF.TabIndex = 28;
             birthDateF.TextChanged += textBox2_TextChanged;
             // 
             // contactF
             // 
-            contactF.Location = new Point(251, 382);
+            contactF.Location = new Point(192, 392);
             contactF.Margin = new Padding(4, 5, 4, 5);
             contactF.Name = "contactF";
-            contactF.Size = new Size(170, 31);
+            contactF.Size = new Size(229, 31);
             contactF.TabIndex = 28;
             contactF.TextChanged += contactF_TextChanged;
             // 
             // emailF
             // 
-            emailF.Location = new Point(251, 333);
+            emailF.Location = new Point(192, 336);
             emailF.Margin = new Padding(4, 5, 4, 5);
             emailF.Name = "emailF";
-            emailF.Size = new Size(170, 31);
+            emailF.Size = new Size(229, 31);
             emailF.TabIndex = 29;
             emailF.TextChanged += emailF_TextChanged;
             // 
@@ -187,11 +189,23 @@
             buttonOkay.UseVisualStyleBackColor = true;
             buttonOkay.Click += buttonOkay_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Emoji", 8F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Location = new Point(128, 136);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(212, 21);
+            label1.TabIndex = 35;
+            label1.Text = "Your responses are recorded.";
+            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(463, 529);
+            Controls.Add(label1);
             Controls.Add(buttonOkay);
             Controls.Add(emailF);
             Controls.Add(contactF);
@@ -230,5 +244,6 @@
         private TextBox contactF;
         private TextBox emailF;
         private Button buttonOkay;
+        private Label label1;
     }
 }

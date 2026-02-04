@@ -24,7 +24,7 @@ namespace Week3Fuentes
 
             fName3 = nameFirst;
             mName3 = nameMiddle;
-            lName3 = ADDRESS;
+            lName3 = nameLast;
             ADDD3 = ADDRESS;
             EM3 = EMAIL;
             NU3 = NUMBER;
@@ -50,29 +50,38 @@ namespace Week3Fuentes
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
+          
             if (!button1.Checked && !button2.Checked && !button3.Checked && !button4.Checked && !button5.Checked)
             {
-                MessageBox.Show("Ensure to select your choice each of the questions.");
+                MessageBox.Show("Ensure to select your choice for Question 6.");
                 return;
             }
-            else if (!radioButton1.Checked && !radioButton3.Checked && !radioButton5.Checked && !radioButton2.Checked && radioButton4.Checked)
+
+           
+            if (!radioButton1.Checked && !radioButton2.Checked && !radioButton3.Checked && !radioButton4.Checked && !radioButton5.Checked)
             {
-                MessageBox.Show("Ensure to select your choice each of the questions.");
+                MessageBox.Show("Ensure to select your choice for Question 7.");
                 return;
             }
-            else if (!radioButton6.Checked && !radioButton8.Checked && !radioButton9.Checked && !radioButton10.Checked && !radioButton7.Checked)
+
+           
+            if (!radioButton6.Checked && !radioButton7.Checked && !radioButton8.Checked && !radioButton9.Checked && !radioButton10.Checked)
             {
-                MessageBox.Show("Ensure to select your choice each of the questions.");
+                MessageBox.Show("Ensure to select your choice for Question 8.");
                 return;
             }
-            else if (!radioButton11.Checked && !radioButton13.Checked && !radioButton15.Checked && !radioButton12.Checked && !radioButton14.Checked)
+
+           
+            if (!radioButton11.Checked && !radioButton12.Checked && !radioButton13.Checked && !radioButton14.Checked && !radioButton15.Checked)
             {
-                MessageBox.Show("Ensure to select your choice each of the questions.");
+                MessageBox.Show("Ensure to select your choice for Question 9.");
                 return;
             }
-            else if (!radioButton16.Checked && !radioButton18.Checked && !radioButton20.Checked && !radioButton19.Checked && !radioButton17.Checked)
+
+            
+            if (!radioButton16.Checked && !radioButton17.Checked && !radioButton18.Checked && !radioButton19.Checked && !radioButton20.Checked)
             {
-                MessageBox.Show("Ensure to select your choice each of the questions.");
+                MessageBox.Show("Ensure to select your choice for Question 10.");
                 return;
             }
 
